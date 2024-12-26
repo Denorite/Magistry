@@ -37,7 +37,7 @@ interface TicketData {
 
 @Module({
   name: 'Sessions',
-  version: '2.0.0'
+  version: '2.0.1'
 })
 export class Sessions {
   private readonly CONFIG = {
@@ -595,6 +595,7 @@ export class Sessions {
   }
 
   @Socket('get_sessions')
+  @Permission('player')
   async getSessions({ params, kv }: ScriptContext): Promise<any> {
     try {
       const { playerName } = params;
@@ -615,6 +616,7 @@ export class Sessions {
   }
 
   @Socket('get_current_session')
+  @Permission('player')
   async getCurrentSession({ params, kv }: ScriptContext): Promise<any> {
     try {
       const { playerName } = params;
