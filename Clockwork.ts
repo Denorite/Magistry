@@ -4,7 +4,7 @@ import type { ScriptContext } from '../types.ts';
 
 @Module({
   name: 'Clockwork',
-  version: '1.0.0',
+  version: '1.0.1',
   description: 'Advanced time control system with per-setting configuration'
 })
 export class Clockwork {

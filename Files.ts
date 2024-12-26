@@ -11,7 +11,7 @@ interface SenderState {
 
 @Module({
   name: 'Files',
-  version: '1.0.5',
+  version: '1.0.6',
   description: 'Unix-like file system commands with interactive UI'
 })
 export class FileSystem {
