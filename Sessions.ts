@@ -37,13 +37,13 @@ interface TicketData {
 
 @Module({
   name: 'Sessions',
-  version: '2.0.2'
+  version: '2.0.3'
 })
 export class Sessions {
   private readonly CONFIG = {
     TICKET_EXPIRY: 30 * 60 * 1000, // 30 minutes
     MAX_SESSIONS_STORED: 10,
-    TICKET_LENGTH: 6,
+    TICKET_LENGTH: 5,
     MESSAGE_DELAY: 2000,
     RETRY_ATTEMPTS: 3,
     RETRY_DELAY: 1000
